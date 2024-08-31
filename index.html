@@ -15,22 +15,29 @@
   font-family: "Roboto", sans-serif;}
   .bebas-neue {
     font-family: "Bebas Neue", sans-serif;}
+    .check,.check *{
+        border: 0.2px solid black;
+    }
 </style>
 </head>
 <body class="roboto">
-    <header class="bg-yellow-50 pt-[30px] pb-[60px]">
-        <nav class="lg:mx-[135px] sm:gap-10 sm:items-start sm:mx-[50px]">
-            <div class="flex w-[100%] justify-between">
+    <header class="bg-yellow-50 pt-[30px] pb-[60px] ">
+        <nav class="lg:mx-[135px] sm:gap-10 sm:items-start sm:mx-[50px] ">
+            <div class="flex place-content-between">
                 <div class="w-[290px] h-[40px]">
                     <img class="w-[100%]" src="./icons/logo.png" alt="">
                 </div>
-                <div class="lg:visible md:visible ">
-                   <ul class="flex gap-[50px] font-bold ">
-                     <li><a href=""></a>Home</li>
-                     <li><a href=""></a>products</li>
-                     <li><a href=""></a>About us</li>
-                     <li><a href=""></a>Contact us</li>
-                   </ul>
+                <div class="lg:invisible md:invisible sm:visible"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"    stroke="currentColor" class="size-6 ">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                </div>
+                <div class="lg:visible md:visible sm:invisible">
+                        <ul class="flex gap-[50px] font-bold ">
+                            <li><a href=""></a>Home</li>
+                            <li><a href=""></a>products</li>
+                            <li><a href=""></a>About us</li>
+                            <li><a href=""></a>Contact us</li>
+                          </ul>
                 </div>
             </div>
             <div class="flex w-[100%] lg:items-center sm:items-start justify-between lg:flex-row md:flex-row sm:flex-col">
@@ -55,9 +62,9 @@
 
     </header>
 
-    <main class="lg:mx-[135px]">
+    <main class="lg:mx-[135px] sm:mx-4">
         <section>
-            <div class=" lg:text-start sm:text-center"><h2 class="font-bebas-neue font-bold text-5xl lg:mt-[50px]">WOMAN JACKET</h2></div>
+            <div class=" lg:text-start sm:text-center"><h2 class="font-bebas-neue font-bold text-5xl lg:mt-[50px] sm:mt-12">WOMAN JACKET</h2></div>
             <div class="flex lg:flex-row sm:flex-col lg:justify-center gap-5 mt-3">
                 <div class="gap-3  p-5 shadow-md rounded-2xl">
                     <div class="">
@@ -276,8 +283,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-[600px]">
-                    <img class="w-[100%]" src="./images/shopping.png" alt="">
+                <div class="lg:w-[800px] sm:w-[600px]">
+                    <img class="w-[100%] s" src="./images/shopping.png" alt="">
                 </div>
             </div>
         </section>
